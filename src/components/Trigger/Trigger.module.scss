@@ -1,0 +1,191 @@
+.trigger {
+  padding: 280px 0 310px;
+
+  position: relative;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+}
+
+.lines {
+  margin: 0 auto;
+
+  width: 1920px;
+
+  position: absolute;
+  top: 0;
+  right: -800px;
+  bottom: 0;
+  left: -800px;
+}
+
+.unions {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.union {
+  height: 80px;
+  width: 80px;
+
+  position: absolute;
+
+  &:nth-last-child(-n+2) {
+    bottom: 74px;
+  }
+
+  &:nth-child(-n+2) {
+    top: 74px;
+  }
+
+  &:nth-child(odd) {
+    left: 74px;
+  }
+
+  &:nth-child(even) {
+    right: 74px;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.title {
+  margin: 0 auto;
+
+  max-width: 1080px;
+
+  font-family: var(--font-neutralFace);
+  font-weight: 700;
+
+  font-size: 124px;
+  line-height: 1em;
+
+  text-align: center;
+
+  color: #0D153F;
+
+  span {
+    background: url("/img/trigger/text.png") no-repeat center / cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.second {
+  max-width: 1342px;
+  font-size: 84px;
+
+  span {
+    background: url("/img/icons/text-gradient-dark.png") no-repeat center / cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (max-width: 1679px) {
+  .second {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1319px) {
+  .title {
+    font-size: 94px;
+  }
+
+  .second {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .trigger {
+    padding: 200px 0 240px;
+  }
+
+  .union {
+    height: 60px;
+    width: 60px;
+
+    &:nth-last-child(-n+2) {
+      bottom: 60px;
+    }
+
+    &:nth-child(-n+2) {
+      top: 60px;
+    }
+
+    &:nth-child(odd) {
+      left: 60px;
+    }
+
+    &:nth-child(even) {
+      right: 60px;
+    }
+  }
+
+  .title {
+    font-size: 72px;
+  }
+
+  .second {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 767px) {
+  .trigger {
+    padding: 210px 0;
+  }
+
+  .lines {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .union {
+    height: 34px;
+    width: 34px;
+
+    &:nth-last-child(-n+2) {
+      bottom: 40px;
+    }
+
+    &:nth-child(-n+2) {
+      top: 40px;
+    }
+
+    &:nth-child(odd) {
+      left: 20px;
+    }
+
+    &:nth-child(even) {
+      right: 20px;
+    }
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .second {
+    font-size: 32px;
+  }
+}

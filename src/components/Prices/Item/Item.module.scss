@@ -1,0 +1,151 @@
+.item {
+  padding: 32px 32px 36px;
+
+  min-height: 460px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  clip-path: path('M32 0L0 22.1205V459H506V0H32Z');
+
+  background: #FFFFFF;
+}
+
+.more {
+  font-family: var(--font-neutralFace);
+  font-weight: 700;
+
+  font-size: 12px;
+  line-height: 1em;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  align-self: end;
+
+  color: #FF15E8;
+}
+
+.title {
+  margin-top: 40px;
+
+  font-family: var(--font-neutralFace);
+  font-weight: 700;
+
+  font-size: 34px;
+  line-height: 1em;
+
+  color: #00002F;
+
+}
+
+.text {
+  margin-top: 24px;
+
+  max-width: 385px;
+
+  font-family: var(--font-helveticaNeue);
+  font-weight: 500;
+
+  font-size: 22px;
+  line-height: 1.3em;
+
+  color: #00002F;
+}
+
+.price {
+  padding: 16px 78px;
+  margin-top: auto;
+
+  width: 100%;
+  max-width: 385px;
+
+  font-family: var(--font-neutralFace);
+  font-weight: 400;
+
+  font-size: 34px;
+  line-height: 1em;
+
+  align-self: center;
+
+  background: rgba(#00002E, 0.04);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+
+  > span {
+    background: linear-gradient(219.11deg, #5712F1 0%, rgba(87, 18, 241, 0) 100%), linear-gradient(263.15deg, #8A57FF 2.33%, #3900EA 15.96%, #3200D3 25.75%, #21009D 37.74%, #0E005E 53.18%, #00002F 79.86%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.time {
+  margin-top: 34px;
+
+  font-family: var(--font-helveticaNeue);
+  font-weight: 300;
+
+  font-size: 22px;
+  line-height: 1.2em;
+
+  align-self: end;
+
+  color: #252525;
+}
+
+@media (max-width: 1679px) {
+  .price {
+    padding: 16px 70px;
+  }
+}
+
+@media (max-width: 1319px) {
+  .item {
+    flex: 0 1 450px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .item {
+    flex: 0 1 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .item {
+    padding: 32px 24px 24px 22px;
+
+    min-height: 318px;
+  }
+
+  .more {
+    font-size: 10px;
+  }
+
+  .title {
+    margin-top: 26px;
+
+    font-size: 24px;
+  }
+
+  .text {
+    margin-top: 16px;
+
+    font-size: 16px;
+  }
+
+  .price {
+    padding: 11px 50px;
+
+    font-size: 24px;
+  }
+
+  .time {
+    margin-top: 24px;
+
+    font-size: 15px;
+  }
+}

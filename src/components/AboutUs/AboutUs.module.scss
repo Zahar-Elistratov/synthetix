@@ -1,0 +1,205 @@
+@use "animation";
+
+.about-us {
+  padding: 134px 0 117px;
+
+  position: relative;
+
+  background: #00002F;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+}
+
+.lines {
+  margin: 0 auto;
+
+  height: 100%;
+  width: 1447px;
+
+  position: absolute;
+  top: 0;
+  right: -500px;
+  bottom: 0;
+  left: -500px;
+}
+
+.container {
+  position: relative;
+}
+
+.heading {
+  padding-left: 140px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  max-width: 780px;
+
+  font-family: var(--font-neutralFace);
+  font-weight: 700;
+
+  font-size: 48px;
+  line-height: 1em;
+
+  background: url("/img/icons/text-gradient.png") no-repeat center / cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.line {
+  height: 2px;
+  width: 645px;
+
+  background: rgba(#FFFFFF, 0.5);
+}
+
+.body {
+  position: relative;
+}
+
+.cards {
+  margin-top: 25px;
+
+  height: 860px;
+  width: 100%;
+
+  position: relative;
+}
+
+.offer {
+  padding: 240px 115px 220px;
+  margin: 0 auto;
+
+  position: absolute;
+  top: -38px;
+  left: 0;
+  right: 0;
+
+  width: fit-content;
+
+  background: url("/img/about-us/background.png") no-repeat center / contain;
+}
+
+.animation {
+  height: 415px;
+  width: 645px;
+
+  position: relative;
+}
+
+.sphere {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-radius: 100%;
+
+  &:nth-child(1) {
+    animation: sphere-1 5s infinite 1s;
+  }
+
+  &:nth-child(2) {
+    animation: sphere-2 5s infinite 1s;
+  }
+
+  &:nth-child(3) {
+    animation: sphere-3 5s infinite 1s;
+  }
+
+  &:nth-child(4) {
+    animation: sphere-4 5s infinite 1s;
+  }
+}
+
+.slider {
+  display: none;
+}
+
+.slide {
+  width: 100%;
+}
+
+@media (max-width: 1319px) {
+  .heading {
+    padding-left: 0;
+  }
+
+  .offer {
+    margin: -13px auto 0;
+
+    position: static;
+  }
+
+  .cards {
+    display: none;
+  }
+
+  .slider {
+    margin-top: -20px;
+    display: block;
+  }
+}
+
+@media (max-width: 1023px) {
+  .title {
+    font-size: 42px;
+  }
+
+  .offer {
+    padding: 160px 0;
+    margin: 24px 0 0;
+
+    width: 100%;
+  }
+
+  .animation {
+    margin: 0 auto;
+  }
+
+  .cards {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us {
+    padding: 85px 0 75px;
+  }
+
+  .lines {
+    display: none;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .offer {
+    padding: 90px 30px 70px;
+    margin: -10px 0 0;
+  }
+
+  .animation {
+    width: 305px;
+    height: 195px;
+  }
+}

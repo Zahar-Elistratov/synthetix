@@ -1,0 +1,190 @@
+.steps {
+  padding: 116px 0 290px;
+
+  position: relative;
+
+  background: #00002F;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+}
+
+.lines {
+  margin: 0 auto;
+
+  height: 100%;
+  width: 1447px;
+
+  position: absolute;
+  top: 0;
+  right: -500px;
+  bottom: 0;
+  left: -500px;
+}
+
+.container {
+  position: relative;
+}
+
+.heading {
+  padding-left: 140px;
+
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  max-width: 250px;
+
+  font-family: var(--font-neutralFace);
+  font-weight: 700;
+
+  font-size: 48px;
+  line-height: 1em;
+
+  background: url("/img/icons/text-gradient.png") no-repeat center / cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc {
+  margin-left: 32px;
+
+  max-width: 360px;
+
+  font-family: var(--font-helveticaNeue);
+  font-weight: 400;
+
+  font-size: 24px;
+  line-height: 1.3em;
+
+  color: #FFFFFF;
+}
+
+.line {
+  margin-left: auto;
+
+  height: 2px;
+  width: 785px;
+
+  background: rgba(#FFFFFF, 0.5);
+}
+
+.list {
+  margin-top: 112px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.row {
+  height: 304px;
+
+  display: flex;
+  align-items: start;
+  gap: 46px;
+
+  position: relative;
+  z-index: 2;
+
+  &:nth-child(even) {
+    justify-content: end;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1319px) {
+  .heading {
+    padding: 0;
+  }
+
+  .row {
+    justify-content: center;
+
+    &:nth-child(even) {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .row {
+    height: auto;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .title {
+    font-size: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: none;
+    width: 100%;
+
+    &::after {
+      content: '';
+      display: block;
+
+      margin-left: 45px;
+
+      height: 2px;
+      width: 100%;
+
+      background: rgba(#FFFFFF, 0.5);
+    }
+  }
+
+  .desc {
+    margin: 24px 0 0;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .steps {
+    padding: 85px 0 115px;
+  }
+
+  .lines {
+    display: none;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .desc {
+    max-width: 220px;
+    font-size: 16px;
+  }
+
+  .list {
+    margin-top: 80px;
+    gap: 24px;
+  }
+
+  .row {
+    gap: 24px;
+  }
+}

@@ -1,0 +1,36 @@
+.menu {
+  padding: 70px 0;
+
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.container {
+  display: flex;
+}
+
+.logo img {
+  display: block;
+}
+
+.img {
+  height: 98px;
+  width: 86px;
+}
+
+@media (max-width: 1319px) {
+  .menu {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .img {
+    height: 60px;
+    width: 54px;
+  }
+}

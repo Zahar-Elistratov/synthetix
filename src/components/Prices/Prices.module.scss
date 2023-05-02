@@ -1,0 +1,78 @@
+.prices {
+  padding: 190px 0 280px;
+
+  background: #FAFAFA;
+}
+
+.heading {
+  padding-left: 140px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  max-width: 300px;
+
+  font-family: var(--font-neutralFace);
+  font-weight: 700;
+
+  font-size: 48px;
+  line-height: 1em;
+
+  background: url("/img/icons/text-gradient-dark.png") no-repeat center / cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.line {
+  height: 2px;
+  width: 1060px;
+
+  background: rgba(#0D153F, 0.5);
+}
+
+.list {
+  margin-top: 116px;
+
+  display: flex;
+  column-gap: 50px;
+  row-gap: 40px;
+}
+
+@media (max-width: 1319px) {
+  .heading {
+    padding: 0;
+  }
+
+  .list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .line {
+    width: 360px;
+  }
+}
+
+@media (max-width: 767px) {
+  .prices {
+    padding: 85px 0 180px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .line {
+    margin-left: 45px;
+    width: 100%;
+  }
+
+  .list {
+    margin-top: 64px;
+  }
+}
